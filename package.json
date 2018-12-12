@@ -21,7 +21,7 @@
   "homepage": "https://github.com/ujjwalguptaofficial/fortjs-typescript-starter#readme",
   "dependencies": {
     "eshtml": "^0.2.1",
-    "fortjs": "^0.9.0"
+    "fortjs": "^1.0.0"
   },
   "devDependencies": {
     "nodemon-webpack-plugin": "^4.0.6",
