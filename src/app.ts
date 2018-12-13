@@ -13,7 +13,8 @@ export class App extends Fort {
 
 new App().create({
     defaultPath: "default",
-    viewEngine: FortViewEngine
+    viewEngine: FortViewEngine,
+    foldersAllowed:["static"]
 });
 
 console.log("Your fort is located at address - localhost:4000");
