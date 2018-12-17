@@ -14,7 +14,7 @@ export class DefaultView extends View {
         </head>
         <body>
         <div class="text-center" style="margin-top:50px;">
-        <img src="/static/fort_js_logo_200_137.png"/>
+        <img src="/fort_js_logo_200_137.png"/>
         <span class="app-name">FortJs</span>
         </div>
         <div class="text-center">
