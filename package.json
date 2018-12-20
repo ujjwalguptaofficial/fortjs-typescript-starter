@@ -22,7 +22,7 @@
   "homepage": "https://github.com/ujjwalguptaofficial/fortjs-typescript-starter#readme",
   "dependencies": {
     "eshtml": "^0.2.1",
-    "fortjs": "^1.2.1"
+    "fortjs": "^1.3.0"
   },
   "devDependencies": {
     "@types/node": "^10.12.15",
