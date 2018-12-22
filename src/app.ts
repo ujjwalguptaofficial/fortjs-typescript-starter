@@ -15,8 +15,9 @@ new App().create({
     defaultPath: "default",
     folders: [{
         alias: "/",
-        path: path.join(__dirname,"../static")
+        path: path.join(__dirname, "../static")
     }]
-});
+}).then(() => {
+    console.log("Your fort is located at address - localhost:4000");
+})
 
-console.log("Your fort is located at address - localhost:4000");
