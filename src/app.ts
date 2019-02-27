@@ -19,5 +19,7 @@ new App().create({
     }]
 }).then(() => {
     console.log("Your fort is located at address - localhost:4000");
+}).catch(err => {
+    console.error(err);
 })
 
