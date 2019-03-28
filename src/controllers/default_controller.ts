@@ -7,7 +7,7 @@ export class DefaultController extends Controller {
             const model = {
                 title: 'FortJs'
             }
-            const result = await viewResult('controller:default,action:default', model);
+            const result = await viewResult('controller:default,worker:default', model);
             return result;
         } catch (ex) {
             console.log(ex);

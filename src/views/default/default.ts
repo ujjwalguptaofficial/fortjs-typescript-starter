@@ -4,7 +4,7 @@ import {
 } from "eshtml";
 
 // you can give any name but make sure its unique among all other views.
-@declareView('controller:default,action:default')
+@declareView('controller:default,worker:default')
 export class DefaultView extends View {
     render(model) {
         return `<!doctype html>
