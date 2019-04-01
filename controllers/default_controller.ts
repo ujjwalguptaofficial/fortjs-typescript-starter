@@ -1,13 +1,14 @@
 import { Controller, DefaultWorker, htmlResult, textResult, renderView, viewResult } from "fortjs";
 
 export class DefaultController extends Controller {
+    
     @DefaultWorker()
-    async default() {
+    async index() {
         try {
             const model = {
                 title: 'FortJs'
             }
-            const result = await viewResult('controller:default,worker:default', model);
+            const result = await viewResult('default/index.html', model);
             return result;
         } catch (ex) {
             console.log(ex);
