@@ -35,5 +35,9 @@
     "webpack-cli": "^3.1.2",
     "webpack-node-externals": "^1.7.2"
   },
-  "language": "typescript"
+  "project": {
+    "framework": "fortjs",
+    "language": "typescript"
+  }
+
 }
