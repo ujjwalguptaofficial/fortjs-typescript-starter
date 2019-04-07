@@ -8,7 +8,8 @@
     "webpack:watch": "webpack --config webpack.config.js --watch",
     "lint": "tslint src/**/*.ts",
     "build": "npm run webpack",
-    "start": "npm run webpack:watch && opn http://localhost:4000"
+    "start": "npm run webpack:watch && opn http://localhost:4000",
+    "deploy": "NODE_ENV=production npm run build"
   },
   "repository": {
     "type": "git",
@@ -33,5 +34,6 @@
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2",
     "webpack-node-externals": "^1.7.2"
-  }
+  },
+  "language": "typescript"
 }
