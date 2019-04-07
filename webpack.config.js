@@ -36,7 +36,7 @@ module.exports = {
     },
     output: {
         filename: 'app.js',
-        path: path.resolve(__dirname, 'build/'),
+        path: path.resolve(__dirname, process.env.BUILD_FOLDER || 'bin'),
         pathinfo: true
     },
     plugins: [new nodemonPlugin()],
