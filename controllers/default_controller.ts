@@ -1,7 +1,7 @@
-import { Controller, DefaultWorker, htmlResult, textResult, renderView, viewResult } from "fortjs";
+import { Controller, DefaultWorker, textResult, viewResult } from "fortjs";
 
 export class DefaultController extends Controller {
-    
+
     @DefaultWorker()
     async index() {
         try {
