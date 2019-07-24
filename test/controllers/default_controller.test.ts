@@ -8,13 +8,12 @@ describe('DefaultController', () => {
         app = await createApp() as any;
     });
 
-    it('index', async (done) => {
+    it('index', async () => {
         const expectedResult = await viewResult('default/index.html', {
             title: 'FortJs'
         });
         const indexMethodOutput = await new DefaultController().index();
         expect(indexMethodOutput).toEqual(expectedResult);
-        done();
     });
 
     afterAll(() => {
