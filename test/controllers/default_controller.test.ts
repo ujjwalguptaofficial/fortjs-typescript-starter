@@ -1,19 +1,11 @@
 import { DefaultController } from "../../controllers/default_controller";
-import { viewResult } from "fortjs";
-import { App } from "../../app";
-import * as path from "path";
+import { viewResult, Fort } from "fortjs";
+import { createApp } from "../..";
 
 describe('DefaultController', () => {
-    let app: App;
-    beforeAll((done) => {
-        app = new App();
-        app.create({
-            folders: [{
-                alias: "/",
-                path: path.join(__dirname, "../static")
-            }]
-        });
-        done();
+    let app: Fort;
+    beforeAll(async () => {
+        app = await createApp() as any;
     });
 
     it('index', async (done) => {
