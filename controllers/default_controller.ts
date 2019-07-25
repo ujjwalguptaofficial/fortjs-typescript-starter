@@ -1,12 +1,12 @@
-import { Controller, DefaultWorker, textResult, viewResult, Worker } from "fortjs";
+import { Controller, DefaultWorker, textResult, viewResult, Worker, Assign } from "fortjs";
 
 export class DefaultController extends Controller {
 
     @DefaultWorker()
-    async index() {
+    async index(@Assign('FortJs') title: string) {
         try {
             const data = {
-                title: 'FortJs'
+                title: title
             };
             const result = await viewResult('default/index.html', data);
             return result;
