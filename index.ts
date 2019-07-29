@@ -1,18 +1,15 @@
 import { App } from "./app";
 import * as path from "path";
 
-export const createApp = () => {
+export const createApp = async () => {
     const app = new App();
-    return new Promise((res, rej) => {
-        app.create({
-            folders: [{
-                alias: "/",
-                path: path.join(__dirname, "../static")
-            }]
-        }).then(() => {
-            res(app);
-        }).catch(rej);
+    await app.create({
+        folders: [{
+            alias: "/",
+            path: path.join(__dirname, "../static")
+        }]
     });
+    return app;
 };
 if (process.env.NODE_ENV !== "test") {
     createApp().then(() => {
