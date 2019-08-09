@@ -1,6 +1,6 @@
-import { DefaultController } from "../../controllers/default_controller";
+import { DefaultController } from "./default_controller";
 import { viewResult, Fort } from "fortjs";
-import { createApp } from "../..";
+import { createApp } from "../index";
 
 describe('DefaultController', () => {
     let app: Fort;
