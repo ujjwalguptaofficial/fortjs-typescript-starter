@@ -10,7 +10,7 @@
     "build": "npm run webpack",
     "start": "npm run webpack:watch",
     "deploy": "cross-env NODE_ENV=production npm run build",
-    "test": "cross-env NODE_ENV=test jest"
+    "test": "cross-env NODE_ENV=test jest --runInBand"
   },
   "repository": {
     "type": "git",
