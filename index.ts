@@ -9,11 +9,12 @@ export const createApp = async () => {
             path: path.join(__dirname, "../static")
         }]
     });
+    process.env.APP_URL = "http://localhost:4000";
     return app;
 };
 if (process.env.NODE_ENV !== "test") {
     createApp().then(() => {
-        console.log("Your fort is located at address - localhost:4000");
+        console.log(`Your fort is located at address - ${process.env.APP_URL}`);
     }).catch(err => {
         console.error(err);
     });

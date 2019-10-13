@@ -1,18 +1,19 @@
 import axios from "axios";
 import { createApp } from "..";
-import { Fort } from "fortjs";
+import { App } from "../app";
 
 
 
 describe('/default', () => {
-    
-    const httpRequest = axios.create({
-        baseURL: 'http://localhost:4000',
-        timeout: 1000
-    });
-    let app: Fort;
+
+    let app: App;
+    let httpRequest;
     beforeAll(async () => {
         app = await createApp();
+        httpRequest = axios.create({
+            baseURL: process.env.APP_URL,
+            timeout: 1000
+        });
     });
 
     it('index', async () => {

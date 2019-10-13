@@ -11,6 +11,7 @@ describe('DefaultController', () => {
     });
 
     it('index', async () => {
+        controller.initialize();
         const expectedResult = await viewResult('default/index.html', {
             title: 'FortJs'
         });
