@@ -6,7 +6,7 @@
   "scripts": {
     "webpack": "webpack --config webpack.config.js",
     "webpack:watch": "webpack --config webpack.config.js --watch",
-    "lint": "tslint src/**/*.ts",
+    "lint": "tslint **/*.ts --exclude node_modules/",
     "build": "npm run webpack",
     "start": "cross-env NODE_ENV=development npm run webpack:watch",
     "deploy": "cross-env NODE_ENV=production npm run build",
